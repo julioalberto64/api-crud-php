@@ -51,7 +51,7 @@ PUT: /update.php
 DELETE: /delete.php 
 ```
 
-## Autores ✒️
+## Authors ✒️
 
 * **Julio Morales** - *Code* - [julioalberto64](https://github.com/julioalberto64)
 * **Julio Morales** - *Documentation* - [julioalberto64](https://github.com/julioalberto64)
