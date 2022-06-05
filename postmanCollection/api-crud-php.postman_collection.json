@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "c62f166b-c8d8-4bda-b206-eeb1ee6ca989",
+		"name": "api-crud-php",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crud GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/temp/crud/api-crud-php/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"temp",
+						"crud",
+						"api-crud-php",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crud GET By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/temp/crud/api-crud-php/single_read.php/?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"temp",
+						"crud",
+						"api-crud-php",
+						"single_read.php",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crud INSERT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Julio Morales\",\n    \"email\": \"me@juliomorales.dev\",\n    \"age\": \"37\",\n    \"designation\": \"Developer\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/temp/crud/api-crud-php/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"temp",
+						"crud",
+						"api-crud-php",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crud Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"20\",\n    \"name\": \"Julio Morales\",\n    \"email\": \"me@juliomorales.dev\",\n    \"age\": \"35\",\n    \"designation\": \"Developer\",\n    \"created\": \"2022-05-05 02:12:30\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/temp/crud/api-crud-php/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"temp",
+						"crud",
+						"api-crud-php",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crud Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/temp/crud/api-crud-php/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"temp",
+						"crud",
+						"api-crud-php",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
